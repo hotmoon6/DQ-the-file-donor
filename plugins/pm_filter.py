@@ -240,7 +240,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", 'reqinfo')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -900,7 +900,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⤬ S ᴀ ᴅ ɪ ᴇ   S ɪ ɴ ᴋ  ♬ ⤬', callback_data="start")
+                    InlineKeyboardButton('⤬  S ᴀ ᴅ ɪ ᴇ   S ɪ ɴ ᴋ  ♬  ⤬', callback_data="start")
                 ],[
                     InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
