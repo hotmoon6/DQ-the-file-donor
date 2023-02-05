@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ S ᴀ ᴅ ɪ ᴇ   S ɪ ɴ ᴋ  ♬ ⤬', callback_data="start")
+                    InlineKeyboardButton('⤬  S ᴀ ᴅ ɪ ᴇ   S ɪ ɴ ᴋ  ♬  ⤬', callback_data="start")
                 ],[
                     InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
