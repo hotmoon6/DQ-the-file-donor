@@ -240,7 +240,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", 'reqinfo')
+        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1352,7 +1352,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", 'reqinfo')
+        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", url=f"https://t.me/{temp.U_NAME}")
     ])
 
     if offset != "":
