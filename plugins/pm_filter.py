@@ -240,7 +240,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("Ⓒ Mɪɴᴅғʟᴀʏᴇʀ's Mɪʀʀᴏʀ", callback_data="mflogo")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -882,6 +882,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "sinfo":
         await query.answer(text=script.SINFO, show_alert=True)
 
+    elif query.data == "mflogo":
+        await query.answer(text=script.MFLOGO, show_alert=True)
+
     elif query.data == "start":
         buttons = [[
                     InlineKeyboardButton('⤬  S ᴀ ᴅ ɪ ᴇ   S ɪ ɴ ᴋ  ♬  ⤬', callback_data="start")
@@ -1336,7 +1339,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("Ⓒ 𝗠ɪɴᴅ𝗳ʟᴀʏᴇʀ's 𝗠ɪʀʀᴏʀ", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("Ⓒ Mɪɴᴅғʟᴀʏᴇʀ's Mɪʀʀᴏʀ", callback_data="mflogo")
     ])
 
     if offset != "":
