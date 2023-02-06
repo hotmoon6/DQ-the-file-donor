@@ -185,7 +185,8 @@ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ ʙʏ ᴜsɪɴɢ ᴄᴍᴅ /ɪᴍᴅʙ ➠ ᴛʏᴘ
 ᴍʏ ɴᴀᴍᴇ : sᴀᴅɪᴇ sɪɴᴋ ♫♪
 ᴍʏ ᴏᴡɴᴇʀ ɴᴀᴍᴇ : ▽ 𐒡ᴘɪᴅᴇʏ
 ʜᴏᴜsᴇ ᴏғ ǫᴜᴀʟɪᴛʏ ᴄᴏɴᴛᴇɴᴛs
-𝟺ᴋ • 𝟸ᴋ • ʙʟᴜʀᴀʏ • ɪᴍᴀx • 𝟷𝟶𝟾𝟶ᴘ • 𝟽𝟸𝟶ᴘ
+
+ʙʟᴜʀᴀʏ • ɪᴍᴀx • 𝟷𝟶𝟾𝟶ᴘ • 𝟽𝟸𝟶ᴘ
 
 ▽ 𐒡ᴘɪᴅᴇʏ | Ⓒ ᴍɪɴᴅғʟᴀʏᴇʀ's ᴍɪʀʀᴏʀ"""
 
@@ -211,7 +212,20 @@ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ ʙʏ ᴜsɪɴɢ ᴄᴍᴅ /ɪᴍᴅʙ ➠ ᴛʏᴘ
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
 
-    IMDB_TEMPLATE_SRC_TXT = """<code>{title}</code>\n<b>{year}</b> • <b>{kind}</b> • <b>{runtime}</b>\n\n<b>🦋 Tɪᴛʟᴇ : </b><a href={url}>{title} ({year})</a>\n<b>⭐ Rᴀᴛɪɴɢ:</b> <code>{rating} / 10</code>\n<b>🎭 Gᴇɴʀᴇs:</b> {genres}\n<b>📆 Rᴇʟᴇᴀsᴇᴅ:</b> {release_date}\n<b>🎙️ Lᴀɴɢᴜᴀɢᴇs:</b> {languages}\n<b>🌎 Cᴏᴜɴᴛʀɪᴇs:</b> {countries}\n\n<b>🎬 Sᴛᴏʀʏʟɪɴᴇ:</b> \n\t❝ <code>{plot}</code> ❞\n\n<b>⚠️ Mɪɴᴅfʟᴀʏᴇʀ's Mɪʀʀᴏʀ</b>
+    IMDB_TEMPLATE_SRC_TXT = """<code>{title}</code>
+<b>{year}</b> • <b>{kind}</b> • <b>{runtime}</b>
+
+<b>🦋 Tɪᴛʟᴇ : </b><a href={url}>{title} ({year})</a>
+<b>⭐ Rᴀᴛɪɴɢ:</b> <code>{rating} / 10</code>
+<b>🎭 Gᴇɴʀᴇs:</b> {genres}
+<b>📆 Rᴇʟᴇᴀsᴇᴅ:</b> {release_date}
+<b>🎙️ Lᴀɴɢᴜᴀɢᴇs:</b> {languages}
+<b>🌎 Cᴏᴜɴᴛʀɪᴇs:</b> {countries}
+
+<b>🎬 Sᴛᴏʀʏʟɪɴᴇ:</b> 
+  ❝ <code>{plot}</code> ❞
+
+<b>⚠️ Mɪɴᴅfʟᴀʏᴇʀ's Mɪʀʀᴏʀ</b>
 """
     
     ALL_FILTERS = """
