@@ -100,6 +100,12 @@ async def get_poster(query, bulk=False, id=False, file=None):
         movieid = movieid[0].movieID
     else:
         movieid = query
+        
+    kind_value = movie.get("kind")
+    if kind_value == "movie":
+        kind_value = "Movie"
+    elif kind_value == "tv series":
+        kind_value = "TV-Series"
     movie = imdb.get_movie(movieid)
     if movie.get("original air date"):
         date = movie["original air date"]
@@ -124,7 +130,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
         "seasons": movie.get("number of seasons"),
         "box_office": movie.get('box office'),
         'localized_title': movie.get('localized title'),
-        'kind': movie.get("kind").capitalize(),
+        'kind': kind_value,
         "imdb_id": f"tt{movie.get('imdbID')}",
         "cast": list_to_str(movie.get("cast")),
         "runtime": list_to_str([TimeFormatter(int(run) * 60 * 1000) for run in movie.get("runtimes", "0")]),
