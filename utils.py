@@ -100,13 +100,14 @@ async def get_poster(query, bulk=False, id=False, file=None):
         movieid = movieid[0].movieID
     else:
         movieid = query
-        
+    movie = imdb.get_movie(movieid)
+    
     kind_value = movie.get("kind")
     if kind_value == "movie":
         kind_value = "Movie"
     elif kind_value == "tv series":
         kind_value = "TV-Series"
-    movie = imdb.get_movie(movieid)
+    
     if movie.get("original air date"):
         date = movie["original air date"]
     elif movie.get("year"):
