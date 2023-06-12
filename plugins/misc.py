@@ -147,7 +147,26 @@ async def imdb_search(client, message):
         await k.edit('Here is what i found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
     else:
         await message.reply('Give me a movie / series Name')
-
+        
+@Client.on_message(filters.command("imdb") & filters.reply)
+async def imdb_search_reply(client, message):
+    if message.reply_to_message and message.reply_to_message.text:
+        movie_name = message.reply_to_message.text
+        k = await message.reply('Searching IMDb')
+        movies = await get_poster(movie_name, bulk=True)
+        if not movies:
+            return await message.reply("No results found")
+        btn = [
+            [
+                InlineKeyboardButton(
+                    text=f"{movie.get('title')} - {movie.get('year')}",
+                    callback_data=f"imdb#{movie.movieID}",
+                )
+            ]
+            for movie in movies
+        ]
+        await k.edit('Here is what I found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
+        
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     i, movie = quer_y.data.split('#')
