@@ -200,9 +200,14 @@ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ ʙʏ ᴜsɪɴɢ ᴄᴍᴅ /ɪᴍᴅʙ ➠ ᴛʏᴘ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>{caption}</b>
+<b>📂 File Name: {file_name}</b>
 
-<b>🦋 ᴘʀᴏᴠɪᴅᴇᴅ ʙʏ Sᴀᴅɪᴇ</b>"""
+<b>ᴘʀᴏᴠɪᴅᴇᴅ ʙʏ [Sᴀᴅɪᴇ⭐](https://t.me/mfsadiebot)</b>"""
+
+    BATCH_FILE_CAPTION = """
+<b>{file_caption}</b>
+
+<b>ᴘʀᴏᴠɪᴅᴇᴅ ʙʏ [Sᴀᴅɪᴇ⭐](https://t.me/mfsadiebot)</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>ⓒ IMDb | Query: {query}
